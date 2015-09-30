@@ -8,8 +8,13 @@ requirejs.config({
       "app": "../app"
     },
     "shim": {
-        "jquery.alpha": ["jquery"],
-        "jquery.beta": ["jquery"]
+        "ufi.core": ["require"],
+        "ufi.frameGen": ["ufi.core"],
+        "ufi.xml": ["ufi.core"],
+        "ufi.validate": ["ufi.core"]
+        
+
+        
     }
 });
 
